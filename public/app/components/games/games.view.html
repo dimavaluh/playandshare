@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="sidebar col-md-4">
+      <div class="panel left-panel">
+        <div class="panel-heading">
+          <h4 class="genre-title">Genres</h4>
+        </div>
+        <div class="panel-body">
+          <div class="list-group">
+            <a href="" class="list-item" ng-repeat="genre in allGenres | orderBy: '-gamesCounts'" ng-click="setFilter(genre)">
+              <span class="badger">{{genre.gamesCounts}}</span>
+              {{ genre.name }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="result col-md-8">
+      <div class="panel right-panel">
+        <div class="panel-heading">
+          <h4 class="block-title">Games</h4>
+        </div>
+        <div class="panel-body">
+          <div class="list-group">
+<<<<<<< HEAD
+            <a ng-href="#/games/genre/{{game.genres[0]}}/{{game.$id}}" class="list-item clearfix" ng-repeat="game in allGames | filter: genre: true">
+              <h3 class="result-game-title game-title">{{game.title}}</h3>
+=======
+            <a ng-href="#/games/{{game.genres[0]}}/{{game.name}}" class="list-group-item clearfix" ng-repeat="game in allGames | filter: genre: true">
+              <h3 class="result-game-title">{{game.name}}</h3>
+>>>>>>> upstream/master
+              <div class="result-game-picture col-md-6">
+                <img class="result-game-img" ng-src="{{game.image}}">
+              </div>
+              <div class="result-game-content col-md-6">
+                <h5 class="item-title"><strong>Genre:</strong></h5>
+                <ul class="result-game-genres-list">
+                  <li class="result-game-genres-i" ng-repeat="genre in game.genres">{{ genre }}</li>
+                </ul>
+                <h5 class="item-title"><strong>Description:</strong></h5>
+                <p class="result-game-desc">
+                  {{game.deck}}
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

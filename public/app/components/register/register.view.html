@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="panel register-panel">
+    <div class="item-title">
+      Register
+    </div>
+    <div class="panel-body clearfix">
+      <div class="col-md-6 col-md-offset-3">
+        <form class="form-horizontal" ng-submit="register(nickName, email, userPass)">
+          <div class="form-group">
+            <label for="inputNickname3" class="col-sm-4 control-label">Nickname</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control form-param" id="inputNickname3" placeholder="Nickname" ng-model="nickName" minlength="1" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+            <div class="col-sm-8">
+              <input type="email" class="form-control form-param" id="inputEmail3" placeholder="Email" ng-model="email" minlength="1" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
+            <div class="col-sm-8">
+              <input type="password" class="form-control form-param" id="inputPassword3" placeholder="Password" ng-model="userPass" minlength="1" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-5">
+              <button type="submit" class="btn uni-button">Create an account</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="alert alert-danger alert-dismissible col-md-6 col-md-offset-3 alert-msg" role="alert" ng-if="errorMsg">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        {{errorMsg}}
+      </div>
+    </div>
+  </div>
+</div>

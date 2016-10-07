@@ -1,0 +1,114 @@
+.navbar-form{
+  position: relative;
+}
+.profile-btn{
+  display: block;
+  float: left;
+  margin: 5px 15px;
+  color: $color-white;
+  transition: all .5s;
+
+  &:hover{
+    text-decoration: none;
+    color: $color-hover;
+  }
+}
+.profile-img{
+  margin-right: 10px;
+  height: 40px;
+
+}
+.search-results{
+  width: 80%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 999;
+}
+.nav-bar {
+  border: none;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  margin-top: 20px;
+}
+.nav-logo {
+  background: transparent;
+  text-decoration: none;
+  padding: 10px;
+  line-height: 50px;
+  font-family: $font-press-start;
+  font-size: 30px;
+  color: $color-white;
+
+  &:hover {
+    color: $color-hover;
+    transition: all .5s;
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+  &:focus {
+    color: $color-hover;
+    text-decoration: none;
+  }
+}
+.navbar-items {
+  float: left;
+  display: flex;
+}
+.navbar-items li a {
+  color: $color-white;
+  font-size: 18px;
+  line-height: 30px;
+  &:hover {
+    color: $color-hover;
+    background-color: inherit;
+  }
+  &:active {
+      color: $color-hover;
+      background-color: inherit;
+  }
+  &:focus {
+      background-color: inherit;
+  }
+  }
+.search-section {
+  margin: 0 0 20px;
+}
+.form-wrapper {
+  background-color: $background-color;
+}
+
+.form-group {
+  width: 80%;
+  border-radius: $border-radius;
+}
+.search-bar {
+  width: 50%;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.search-input {
+  width: 100%;
+  height:33px;
+  border-radius: $border-radius;
+  padding: 0 13px;
+
+}
+.search-button {
+  width: 19%;
+  border-radius: $border-radius;
+}
+.search-item {
+  &:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &:last-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}

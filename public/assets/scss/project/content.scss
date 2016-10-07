@@ -1,0 +1,124 @@
+.right-panel, .left-panel {
+  background-color: $background-color;
+  border-radius: $border-radius;
+}
+.register-panel {
+  background-color: $background-color;
+  border-radius: $border-radius;
+  text-align: center;
+}
+.genre-title {
+  font-family: $font-press-start;
+  color: $color-white;
+  font-size: 30px;
+  margin-left: 15px;
+}
+.block-title {
+  font-family: $font-press-start;
+  color: $color-white;
+  font-size: 30px;
+  margin-left: 30px;
+}
+.list-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    transition: all .2s;
+    background-color: transparent;
+    color: white;
+    &:first-child {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    &:last-child {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: $color-white;
+      text-decoration: none;
+    }
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+.badger {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3px;
+  float: right;
+}
+.game-title {
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 35px;
+}
+.item-title {
+  font-weight: 600;
+  font-size: 30px;
+  color: $color-white;
+}
+.genres-list-item {
+  min-height: 62px;
+}
+.genres-img {
+  float: left;
+}
+.panel-body {
+  color: $color-white;
+  position: relative;
+}
+.result-game-title {
+  font-family: $font-press-start;
+  color: $color-white;
+  font-size: 30px;
+  margin:15px 0 20px 15px;
+}
+.form-item {
+  width: 85%;
+  margin: 10px auto;
+  height: 34px;
+}
+.form-control {
+  border-radius: 0;
+}
+.uni-button {
+  border-radius: 0;
+  color: white;
+  background-color: $background-color;
+  min-width: 97px;
+  &:hover {
+    color: $color-white;
+    transition: all .5s;
+    text-decoration: none;
+    background-color: #000000;
+  }
+  &:active {
+    text-decoration: none;
+  }
+  &:focus {
+    color: $color-hover;
+    text-decoration: none;
+  }
+}
+.form-param {
+  width: 115%;
+}
+.user-info li {
+  margin: 5px 0;
+}
+.user-photo {
+  padding-top: 15px;
+}
+.save-changes {
+  position: absolute;
+  bottom: 40px;
+  right: 124px;
+}
+.account-search {
+  width: 42.7%;
+  margin-left: 179px;
+}

@@ -1,0 +1,90 @@
+<div class="container">
+  <div class="panel register-panel">
+    <div class="panel-body">
+      <div class="col-md-4">
+        <img class="user-photo" ng-src="{{signUser.avatar}}">
+        <ul class="user-info">
+          <li class="user-full-name">
+            <label class="control-label">Your Nickname
+              <input class="form-control" type="text" ng-model="signUser.nickName" ng-disabled="!disabled.nickName">
+            </label>
+<<<<<<< HEAD
+            <a class="btn uni-button" href="#" role="button">Edit
+=======
+            <a class="btn btn-primary" href="" role="button" ng-click="edit('nickName')">Edit
+>>>>>>> upstream/master
+              <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li class="user-email">
+            <label class="control-label">Your e-mail
+              <input class="form-control" type="text" ng-model="signUser.email" ng-disabled="!disabled.email">
+            </label>
+<<<<<<< HEAD
+            <a class="btn uni-button" href="#" role="button">Edit
+=======
+            <a class="btn btn-primary" href="" role="button" ng-click="edit('email')">Edit
+>>>>>>> upstream/master
+              <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li class="user-location">
+            <label class="control-label" ng-click="edit('location')">Your location
+              <input class="form-control" type="text" ng-model="signUser.location" ng-disabled="!disabled.location">
+            </label>
+<<<<<<< HEAD
+            <a class="btn uni-button" href="#" role="button">Edit
+=======
+            <a class="btn btn-primary" href="" role="button">Edit
+>>>>>>> upstream/master
+              <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-md-offset-1">
+        <div class="panel-heading">
+          <h3 class="item-title">
+            My account
+          </h3>
+        </div>
+        <h3>Your games:</h3>
+        <ul class="account-user-games-list">
+          <li class="account-user-game-i col-md-3" ng-repeat="userGame in signUser.gamesCollection">
+            <img ng-src="{{userGame.img}}">
+            {{userGame.title}}
+            <a href="" class="hover-wrapper" ng-click="deleteGame(userGame)">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="add-game">Add one game</label>
+            <input type="text" class="form-control" id="add-game" placeholder="Input game name" ng-model="searchGame.title" ng-change="hideResults()">
+          </div>
+          <button class="btn uni-button" ng-click="addGame(searchGame)">Add</button>
+          <div class="search-results account-search">
+            <div class="list-group clearfix" ng-if="searchGame && show">
+<<<<<<< HEAD
+              <a class="list-group-item search-item" ng-repeat="game in allGames | filter:searchGame.title" href="" ng-click="choose(game)">{{game.title}}</a>
+=======
+              <a class="list-group-item" ng-repeat="game in allGames | filter:searchGame.title" href="" ng-click="choose(game)">{{game.name}}</a>
+>>>>>>> upstream/master
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="account-action">
+        <button class="btn uni-button save-changes" ng-click="saveChanges(signUser.nickName, signUser)">Save changes</button>
+      </div>
+    </div>
+<<<<<<< HEAD
+
+=======
+    <div class="account-action">
+      <button class="btn btn-success save-changes" ng-click="saveChanges(signUser._id, signUser)">Save changes</button>
+    </div>
+>>>>>>> upstream/master
+  </div>
+</div>
